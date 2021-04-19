@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 com SASS e SCSS</title>
+    <style>
+        input { margin-bottom: 10px; margin-right: 10px; }
+        form input { border : red 2px solid; }
+        form > input { border: 2px solid blue; }
+        form + input { border: 2px solid green!important; }
+        form ~ input { border: 2px solid pink; }
+    </style>
+</head>
+<body>
+    <h3>Combinadores de seletor</h3>
+    <input type="text" placeholder="Endereço">
+
+    <form>
+        <!-- filho direto de form -->
+        <input type="text" placeholder="filho direto de form">
+
+        <label for="email">
+            <input type="email" name="email" placeholder="filho direto de label">
+        </label>
+    </form>
+
+    <!-- irmão adjacente de form -->
+    <input type="password" placeholder="irmão adjacente de form">
+
+    <!-- irmãos gerais de form -->
+    <input type="password" placeholder="irmão geral de form 1">
+    <input type="password" placeholder="irmão geral de form 2">
+    <input type="password" placeholder="irmão geral de form 3">
+    <input type="password" placeholder="irmão geral de form 4">
+</body>
+</html>
