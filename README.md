@@ -263,3 +263,39 @@ Cada espaço de uma grade é uma **grid cell**, também conhecido como unidade d
 **grid area** = espaço total gerado por 4 grid lines, formando um grupo de celulas.
 
 **gutters** = espaços entre as linhas ou colunas (uma célula e outra) do grid. Fazem uma separação entre os elementos do grid.
+
+# Propriedades do CSS3
+
+Podemos criar atalhos (snippets) para otimizar nosso trabalho na criação de um projeto que seja um tanto extenso ou para uso normal no dia a dia. Para isso no VSCode vamos em File > Preferences > User snippets
+
+OBS: Quando o doctype ele não existe ou está posicionado em lugar errado, acaba sendo ignorado. O browser tenta executar o HTML da melhor forma.
+
+## height, max-height e min-height
+
+**height** = define a altura de elementos sem incluir margin, border e padding. Ela permite herança explícita (inherit) não automáticamente. As **max-height** e **min-height** sobrescrevem height.
+
+**max-height** = define uma altura máxima de um elemento. Se o conteudo for maior, ele irá gerar um overflow.
+
+**min-height** = define uma altura mínima de um elemento. Se o conteúdo for menos, a altura mínima será aplicada, caso contrário, ela será ignorada.
+
+## width, max-width e min-width
+
+**width** = define a largura de elementos sem incluir margin, border e padding. Ela permite herança explícita (inherit) não automáticamente. As **max-width** e **min-width** sobrescrevem width.
+
+- Valores de width em vw ignoram margens definidas e pegam a partir o tamanho da área vísivel.
+- Valor **fit-content** o width se ajusta de acordo com o tamanho do conteúdo.
+- Valor **max-content** vai ser a máxima largura possível de acordo com o conteúdo.
+- Valor **min-content** vai colocar o mínimo de largura possível de acordo com o conteúdo.
+- Valor **revert** funciona para o Safari com a mesma função do initial.
+- Valor **unset** desabilita o valor;
+
+**max-width** = define uma largura máxima de um elemento. Se o conteudo for maior, ele mudará automaticamente a altura do elemento. Se menor, não tem efeito nenhum.
+
+**min-width** = define uma largura mínima de um elemento. Se o conteúdo for menor, a largura mínima será aplicada, caso contrário, ela será ignorada.
+
+*Quando se coloca width como auto, temos a impressão que ele ocupa 100% da tela, mas isso na verdade é um display block colocado pelo navegador por padrão. Portanto, sempre é importante definir um tamanho para o elemento.*
+
+## margin (top, right, bottom, left)
+
+o valor padrão é **0** e não herda valores.
+

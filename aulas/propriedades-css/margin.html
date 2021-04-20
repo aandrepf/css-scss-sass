@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 com SASS e SCSS - Margem</title>
+    <style>
+        body {margin: 0; padding: 0; display: flex; height: 100vh;}
+        .bloco {
+            width: 20vw;
+            height: 50vh;
+            background-color: #487EB0;
+        }
+        /* .bloco:first-child { margin-left: initial;} */
+        .mt { margin-top: 5%; }
+        .mr { margin-right: 5%;}
+        .mb { margin-bottom: 5%;}
+        .ml { margin-left: 5%;}
+        div#bph2018style { display: none; }
+
+        .bloco + .bloco { margin-left: 2%; }
+    </style>
+</head>
+<body>
+
+    <div class="bloco mt">margin-top</div>
+
+    <div class="bloco mr">margin-right</div>
+
+    <div class="bloco mb">margin-bottom</div>
+
+    <div class="bloco ml">margin-left</div>
+
+</body>
+</html>

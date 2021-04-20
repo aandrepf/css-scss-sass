@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 com SASS e SCSS - WIDTH</title>
+    <style>
+        body { margin: 50px; padding: 0; }
+        .fundo { 
+            width: 100vw;
+            height: 100vh;
+         }
+         .fundo > div[class^=largura] {
+             border-style: solid;
+             border-width: 2px;
+             margin-bottom: 5%;
+             height: 50px;
+             overflow: hidden;
+         }
+         .largura-auto {
+            width: auto;
+            border-color: #00598DAA;
+         }
+         .largura-vwvh {
+            width: 50vw;
+            border-color: #008D44AA;
+         }
+         .largura-percent {
+             width: 50%;
+             border-color: #EB6767AA;
+         }
+         .largura-pixel {
+             width: 350px;
+             border-color: #C82AAEAA;
+         }
+         .largura-fit {
+             width: fit-content;
+             border-color: #C2F01CAA;
+         }
+         .largura-min {
+             width: min-content;
+             border-color: #2AC3C8AA;
+         }
+         .largura-max {
+             width: max-content;
+             border-color: #7C2AC8AA;
+         }
+         .largura-revert {
+             width: revert;
+             border-color: #C82A2AAA;
+         }
+         .largura-unset {
+             width: unset;
+             border-color: #57C82AAA;
+         }
+        div#bph2018style { display: none; }
+    </style>
+</head>
+<body>
+
+    <div class="fundo">
+        <div class="largura-auto">AUTO: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel labore ipsum magnam quisquam laborum, sit molestiae tempora, quaerat quod deserunt modi ut architecto explicabo dicta magni velit animi corrupti nemo?</div>
+
+        <div class="largura-vwvh">VWVH: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel labore ipsum magnam quisquam laborum, sit molestiae tempora, quaerat quod deserunt modi ut architecto explicabo dicta magni velit animi corrupti nemo?</div>
+
+        <div class="largura-percent">PERCENT: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel labore ipsum magnam quisquam laborum, sit molestiae tempora, quaerat quod deserunt modi ut architecto explicabo dicta magni velit animi corrupti nemo?</div>
+
+        <div class="largura-pixel">PIXEL: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel labore ipsum magnam quisquam laborum, sit molestiae tempora, quaerat quod deserunt modi ut architecto explicabo dicta magni velit animi corrupti nemo?</div>
+
+        <div class="largura-fit">FIT-CONTENT: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+        <div class="largura-min">MIN-CONTENT: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+        
+        <div class="largura-max">MAX-CONTENT: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+        <div class="largura-revert">REVERT: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+
+        <div class="largura-unset">UNSET: Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+
+</body>
+</html>
