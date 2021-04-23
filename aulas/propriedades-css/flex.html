@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>CSS3 com SASS e SCSS - Propriedades</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {margin:0; padding: 0;} 
+        div#bph2018style { display: none; }
+
+        .container {
+            display: flex;
+            width: 80%;
+            height: 90vh;
+            box-shadow: 0 0 10px rgba(100,100,100,0.2);
+
+            /* flex-direction: row;
+            flex-wrap: wrap; */
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+        .container > div {
+            width: 150px;
+            height: 150px;
+            border-width: .5px;
+            border-style: solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container > div:hover {
+            color: #fdcb6e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <!-- <div class="d">D</div>
+        <div class="e">E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+        <div class="h">H</div>
+        <div class="i">I</div>
+        <div class="j">J</div>
+        <div class="k">K</div>
+        <div class="l">L</div> -->
+    </div>
+</body>
+</html>

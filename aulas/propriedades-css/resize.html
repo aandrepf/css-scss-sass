@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>CSS3 com SASS e SCSS - Propriedades</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {margin:0; padding: 0; display: flex; flex-direction: column; align-items: center;} 
+        .content {
+            width: 50vw;
+        }
+        .item {
+            resize: both;
+            overflow: auto;
+        }
+        textarea {
+            resize: horizontal;
+        }
+        .item:nth-child(2) {
+            resize: inline;
+        }
+        div#bph2018style { display: none; }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit numquam, laudantium fugiat recusandae ab velit commodi facilis id! Inventore laudantium veniam minus rerum sint incidunt earum accusamus quas repellendus?</p>
+        <p class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate impedit numquam, laudantium fugiat recusandae ab velit commodi facilis id! Inventore laudantium veniam minus rerum sint incidunt earum accusamus quas repellendus?</p>
+    </div>
+
+    <form>
+        <textarea></textarea>
+    </form>
+</body>
+</html>

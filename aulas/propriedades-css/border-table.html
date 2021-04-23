@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>CSS3 com SASS e SCSS - BORDER TABLES</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {margin:0; padding: 0; display: flex; justify-content: center; align-items: center;}
+        table {
+            border: 1px solid #333;
+            width: 70vw;
+            border-collapse: separate;
+            border-spacing: 0px;
+
+        }
+        td, th { border: 1px solid #333; }
+        div#bph2018style { display: none; }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Cargo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>André Figueiredo</td>
+                <td>figueiredoaphilippe@gmail.com</td>
+                <td>11 96545-5123</td>
+                <td>Dev Front-End</td>
+            </tr>
+            <tr>
+                <td>Luana Ramos</td>
+                <td>luana.mrfig@gmail.com</td>
+                <td>11 96545-5123</td>
+                <td>Projetista</td>
+            </tr>
+            <tr>
+                <td>João Lima</td>
+                <td>joao.lima@gmail.com</td>
+                <td>11 96545-5123</td>
+                <td>Dev Back-End</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

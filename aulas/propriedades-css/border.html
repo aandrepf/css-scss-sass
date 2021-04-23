@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>CSS3 com SASS e SCSS - BORDER</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0;
+            width: 100vw; 
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: #fff;
+            
+            border-style: ridge;
+            border-color: #e1b12c;
+            border-width: 10px;
+            
+        } 
+       /*  div {
+            border-style: inherit;
+            border-color: red;
+            border-width: 10px;
+            width: 200px;
+            height: 200px;
+        } */
+
+        .img-source {
+            width: 500px;
+            height: 500px;
+            background-color: #fbc531;
+            border: solid 1px #fbc531;
+            /* border-image-source: url('img/border-image-source.png');
+            border-image-slice: 100;
+            border-image-width: 50;
+            border-image-outset: 50;
+            border-image-repeat: round; */
+
+            /* abreviado */
+            border-image: url('img/border-image-source.png') 100 / 50 / 50 round;
+        }
+        div#bph2018style { display: none; }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <div class="img-source"></div>
+</body>
+</html>
