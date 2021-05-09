@@ -1,0 +1,28 @@
+$laranja: #ff760c;
+$laranja-transparent: rgba($laranja, 0.33); 
+$background-color: #0000FF;
+
+* { box-sizing: border-box; }
+body {
+    margin:0;
+    font-family: sans-serif;
+    background-color: $background-color;
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $laranja;
+        height: 100px;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    section {
+        background-color: $laranja-transparent;
+        height: calc(100vh - 100px);
+    }
+} 
+div#bph2018style { display: none; }

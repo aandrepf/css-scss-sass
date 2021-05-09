@@ -1,0 +1,6 @@
+@use 'theme' with(
+    $corPrimaria: rgb(0, 93, 20),
+    $cantos: 5px
+);
+
+div#bph2018style { display: none; }

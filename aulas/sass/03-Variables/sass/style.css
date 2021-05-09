@@ -1,0 +1,38 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #0000FF;
+}
+
+body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ff760c;
+  height: 100px;
+}
+
+body header h1 {
+  margin: 0;
+}
+
+body section {
+  background-color: rgba(255, 118, 12, 0.33);
+  height: calc(100vh - 100px);
+}
+
+div#bph2018style {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
