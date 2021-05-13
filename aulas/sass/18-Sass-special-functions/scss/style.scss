@@ -1,0 +1,18 @@
+$font: '../fonts/Open_Sans/';
+
+@font-face {
+    font-family: 'OSRegular';
+    src: url($font + 'OpenSans-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'OSLight';
+    src: url($font + 'OpenSans-Light.ttf');
+    font-weight: 300;
+}
+
+body {
+    font-family: 'OSLight';
+    font-size: 20px;
+}

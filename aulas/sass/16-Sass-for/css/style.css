@@ -1,0 +1,13 @@
+ul:nth-child(3n+1) {
+  background-color: #0059b3;
+}
+
+ul:nth-child(3n+2) {
+  background-color: #0080ff;
+}
+
+ul:nth-child(3n+3) {
+  background-color: #4da6ff;
+}
+
+/*# sourceMappingURL=style.css.map */

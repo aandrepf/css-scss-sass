@@ -1,0 +1,9 @@
+.error, .error--serious {
+  background-color: #ffa6a6;
+  border: 1px solid #f00;
+  margin: 10px;
+  padding: 10px;
+}
+.error--serious {
+  border-width: 3px;
+}

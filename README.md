@@ -531,7 +531,7 @@ Align-content só faz sentido se usarmos junto com flex-wrap.
 
 Como o padrão é 0 os flex-itens ocupam um tamanho máximo relacionado ao conteúdo interno deles ou a um width definido. Ao colocar 1 eles tentarão ter a mesma largura e vão ocupar 100% do flex-container. A propriedade **justify-content** não funciona quando temos flex-grow definido.
 
-**flex-basis (tamanho minimo dos flex-item)** = define o tamanho inical do flex-item antes da distribuição do espaço restante. Valores [auto (default) | length | number | valores globais]
+**flex-basis (tamanho minimo dos flex-item)** = define o tamanho inical do flex-item antes da distribuição do espaço restante. Valores [auto (default) | length | number | fill | max-content | min-content | fill-content | content | valores globais]
 
 Quando temos flex-grow igual a 1 e o basis está como *auto* o restante para ocupar o container é distribuído ao redor do conteúdo do flex-item.
 

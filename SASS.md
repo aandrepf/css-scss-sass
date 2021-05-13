@@ -4,6 +4,7 @@
 | Sass Install | https://sass-lang.com/install |
 | Sass Guide | https://sass-lang.com/guide |
 | Sass Doc | https://sass-lang.com/documentation |
+| Sass Cli - Dart Sass | https://sass-lang.com/documentation/cli/dart-sass |
 
 | Pravatar | https://pravatar.cc/ |
 
@@ -252,3 +253,52 @@ As regras de estilo do CSS sempre começam com **@** e no SASS muitas das featur
 regras como **@if**, **@each**, **@for** e **@while** controlam quantas vezes os estilos são emitidos.
 
 o SASS também tem algum comportamento especial para regras simples de CSS: *podem conter interpolação e podem ser aninhadas em regras de estilo*. Alguns como **@media** e **@supports**, também permitem que SassScript seja usado diretamente na própria regra sem interpolação.
+
+### módulos nativos
+
+o Sass fornece muitos módulos nativos que contêm funções úteis (e as vezes mixins).
+
+podem ser carregados com a regra **@use** como qualquer folha de estilo e suas funções podem ser chamadas como qualquer outro membro do módulo
+
+todos os URLs de módulos integrados começam com *sass:* para indicar que fazem parte do próprio Sass.
+
+- Versões anteriores **ATENÇÃO!!!**:
+
+antes do sistema de módulos as funções Sass **estavam globalmente disponíveis o tempo todo**. Muitas ainda possuem aliases globais.
+
+a própria equipe do Sass **não recomenda** o uso e irá eventualmente **descontinua-las**, mas por enquanto continuam disponíveis para manter a compatibilidades com versões antigas do Sass como LibSass (que não suporta módulos ainda).
+
+alguns casos em que temos comportamentos de avaliação especial (**if()**) ou porque adicionam um comportamento extra às funções css (**rgb()** e **hsl()**), essas não seram descontinuadas.
+
+```scss
+// @color.scss
+@use 'sass:color';
+
+.button {
+	$primary-color: #6b717f;
+	color: $primary-color;
+	border: 1px solid color.scale($primary-color, $lightness: 20%);
+}
+
+// RESULTADO FINAL style.css
+.button {
+	color: #6b717f;
+	border: 1px solid #878d9a;
+}
+```
+
+- **sass:math**: disponibiliza functions para manipular números; 
+- **sass:string**: permite combinar, busca, ou fatiar uma parte de uma string;
+- **sass:color**: cria novas cores baseadas em cores existentes, tornando fácil a criação de temas.
+- **sass:list**: permite acessar e alterar valores em lista
+- **sass:map**: permite acessar valores associados a uma chave e muito mais
+- **sass:selector**: permite acesso ao poderoso mecanismo de seletores do Sass
+- **sass:meta**: exibe detalhes do funcionamento interno de Sass.
+
+## Sass Cli (Command line interface) - Dart Sass
+
+Ruby Sass não recebe mais atualizações.
+
+Dart Sass está sendo mais utilizado.
+
+

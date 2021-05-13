@@ -1,0 +1,10 @@
+$raio: 8px;
+
+@mixin arredondado {
+    @warn "Deprecated mixin arredondado";
+    border-radius: $raio;
+}
+
+@mixin circulo {
+    border-radius: 50%; 
+}

@@ -1,0 +1,11 @@
+$raio: 8px;
+$raio-padrao: 10px;
+
+@mixin arredondado ($raio: $raio-padrao) {
+    @debug "O valor de raio é: #{$raio}";
+    border-radius: $raio;
+};
+
+@mixin circulo {
+    border-radius: 50%; 
+};

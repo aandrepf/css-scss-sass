@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+
+@mixin avatar($tamanho, $circulo: false) {
+    width: $tamanho;
+    height: $tamanho;
+
+    @if $circulo {
+        border-radius: $tamanho / 2; 
+    } @else {
+        border: 2px solid red;
+    }
+}
+
+.photo {
+    @include avatar(150px, false);
+}
